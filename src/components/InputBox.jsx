@@ -25,7 +25,7 @@ function InputBox({
                     type="number"
                     placeholder="Amount"
                     disabled={amountDisable}
-                    value={amount}
+                    value={amount.toFixed(2)}
                     onChange={(event) => onAmountChange &&
                         onAmountChange(Number(event.target.value))}
                 />
